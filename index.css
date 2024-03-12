@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /* background: linear-gradient(
+      to bottom,
+      rgb(62, 177, 182), 
+    ); */
+    background-attachment: fixed; /* Keep the gradient fixed during scroll */
+}
+.landingText{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0; /* Ensure the header is at the top */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.blockOne{
+display: flex;
+flex-direction: column;
+justify-content:center;
+}
+
+.LiveAIimage{
+    height: 200px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as per your layout requirement */
+    
+}
+
+.button1, .button2 {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white; /* Default background */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    text-decoration: none;
+    color: black;
+}
+
+.button1:hover, .button2:hover {
+    background-color: #012169; /* Changes background to blue on hover */
+    color: white; /* Optional: Changes text color on hover */
+}
+
+
+.image2 {
+    width: 40vw;
+    padding: 10px;
+}
+.image1 {
+    width: 40vw;
+    padding: 10px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Use the full height of the viewport */
+    color: black; /* White text */
+    text-align: center; /* Center the text horizontally */
+    padding-top: 60px; /* Add padding to account for the header, adjust as needed */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.main h1 {
+    font-size: 6rem; /* Large font size for the title */
+    margin: 0.5em 0; /* Spacing above and below the title */
+}
+
+.main h4 {
+    font-size: 2.5rem; /* Smaller font size for the slogan */
+    font-weight: normal; /* Default font weight for the slogan */
+    margin: -1em 0; /* Spacing above and below the slogan */
+}
+
+.nav-links li a {
+    position: relative; /* Required for absolute positioning of pseudo-elements */
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    overflow: hidden; /* Ensures the pseudo-element is bound to the link dimensions */
+}
+
+.nav-links li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust this value as needed */
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: black; /* Color of the underline */
+    transition: width 0.3s ease-in-out; /* Adjust timing as desired */
+}
+
+.nav-links li a:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+.about, .events, .sponsors {
+    display: flex;
+    line-height: 37px;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Spreads items to occupy the entire width */
+    margin: 40px 0; /* Provides enough room on top and below */
+    padding: 20px; /* Ensures content doesn't touch the div borders */
+    width: 95%; /* Controls the width of the div */
+    color: black; /* Sets text color to white */
+    font-family: "Roboto Mono", monospace;}
+
+
+    .sponsors div {
+    width: 70%; 
+}
+.about h2, .events h2, .rules h2, .prizes h2 {
+    text-align: center;
+}
+.sponsors img {
+    width: 300px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.events{
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+}
+
+/* Additional adjustment for .events to align text to the left */
+
+
+.about p, .events p {
+    text-align: center;
+}
+
+/* Use flex-direction to reverse the order for .events, if you want the image on the left */
+
+.rules, .prizes, .faq {
+    width: 90%; /* Cover the entire width of the screen */
+    margin: 0 auto; /* Center the div */
+    padding: 40px 0; /* Add padding above and below */
+    box-sizing: border-box; /* Include padding in the div's dimensions */
+    font-family: "Roboto Mono", monospace;    color: black;
+    line-height: 30px;
+
+
+}
+
+
+.rules, .prizes, .faq {
+    text-align: center; /* Center the text of the h1 within the .rules div */
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.sponsors h2 {
+    margin-bottom: 20px; /* Spacing between the title and images */
+}
+
+.sponsor-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjusts the space between images */
+    width: 100%; /* Ensures the sponsor images container fills the width */
+    max-width: 1200px; /* Adjust this to control the max width of the content */
+}
+
+.sponsor-images img {
+    flex: 1; /* Allows images to grow */
+    min-width: 100px; /* Minimum width of images */
+    max-width: 180px; /* Maximum width of images to avoid them being too large */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Additional styling for the sponsors slideshow */
+.sponsors .slideshow-container {
+    max-width: 100%; /* Adjust to fit the width of the sponsor section */
+    margin: 20px auto; /* Centering the slideshow */
+  }
+  
+  .sponsors img {
+    max-width: 100%; /* Ensure images are fully responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Adjust dot sizes and colors to match your site's theme */
+  .sponsors .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .sponsors .dot.active, .sponsors .dot:hover {
+    background-color: #717171;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* Ensure arrows are above the images */
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+  
+  .next {
+    right: 25px; /* Adjust as necessary */
+  }
+  
+  .prev {
+    left: 25px; /* Adjust as necessary */
+  }
+  
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    display: flex; /* Add flex display */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    overflow: hidden; /* Ensure overflow content is not visible */
+  }
+  
+  .mySlides {
+    width: 100%;
+    display: flex; /* Ensure flex layout for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Positioning context for children */
+  }
+  
+  .mySlides img {
+    max-width: 400px; /* Maximum width of images */
+    max-height: 400px; /* Maximum height of images */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom margin/whitespace */
+    margin: auto; /* Center the image horizontally in case it's smaller than the container */
+  }
+
+  .contact-us {
+    text-align: center; /* Center the content */
+    padding: 20px; /* Add some padding around */
+    background-color: #f2f2f2; /* Light background color */
+    margin: 40px 0; /* Add space above and below */
+}
+
+.social-media-links a {
+    margin: 0 10px; /* Space out the links */
+    display: inline-block; /* Line them up horizontally */
+    font-size: 24px; /* Larger clickable area */
+    color: #333; /* Icon color, adjust as needed */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-media-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.copyright {
+    color: black;
+    text-align: center;
+    width: auto;
+}
+.about, .events, .sponsors, .faq, .rules, .prizes, .contact-us {
+    scroll-margin-top: 100px; /* Adjust this value based on your header's actual height */
+}
+
+
+  
