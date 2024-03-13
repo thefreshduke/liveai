@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Poppins", "Poppins";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -89,7 +89,10 @@ justify-content:center;
     color: #333;
     font-size: 1rem;
 }
-
+.site {
+    padding-left: 15vh;
+    padding-right: 15vh;
+}
 .main {
     display: flex;
     flex-direction: column;
@@ -101,6 +104,28 @@ justify-content:center;
     padding-top: 60px; /* Add padding to account for the header, adjust as needed */
     box-sizing: border-box; /* Include padding in the element's total width and height */
 }
+
+@media (max-width: 768px) {
+    .site .events, .site .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site .events img, .site .about img {
+        width: 80%; /* Adjust the width as needed */
+        margin: 20px auto; /* Center the image and add margin for spacing */
+    }
+
+    .site .events > div, .site .about > div {
+        width: 100%; /* Adjust the width as needed */
+        order: 1; /* Make the text appear first */
+    }
+
+    .site .events img, .site .about img {
+        order: 2; /* Make the image appear after the text */
+    }
+}
+
 
 .main h1 {
     font-size: 6rem; /* Large font size for the title */
@@ -146,7 +171,7 @@ justify-content:center;
     padding: 20px; /* Ensures content doesn't touch the div borders */
     width: 95%; /* Controls the width of the div */
     color: black; /* Sets text color to white */
-    font-family: "Roboto Mono", monospace;}
+    font-family: "Poppins", "Poppins";}
 
 
     .sponsors div {
@@ -181,7 +206,7 @@ justify-content:center;
     margin: 0 auto; /* Center the div */
     padding: 40px 0; /* Add padding above and below */
     box-sizing: border-box; /* Include padding in the div's dimensions */
-    font-family: "Roboto Mono", monospace;    color: black;
+    font-family: "Poppins", "Poppins";    color: black;
     line-height: 30px;
 
 
