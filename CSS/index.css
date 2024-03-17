@@ -29,9 +29,6 @@ flex-direction: column;
 justify-content:center;
 }
 
-.LiveAIimage{
-    height: 200px;
-}
 
 .button-container {
     display: flex;
@@ -93,16 +90,20 @@ justify-content:center;
     padding-left: 15vh;
     padding-right: 15vh;
 }
+
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Use the full height of the viewport */
-    color: black; /* White text */
+    min-height: 100vh; /* Use the full height of the viewport */
+    width: 100%; /* Ensure it takes the full width */
     text-align: center; /* Center the text horizontally */
-    padding-top: 60px; /* Add padding to account for the header, adjust as needed */
+    padding: 60px 20px; /* Add padding and adjust as necessary */
     box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+.main img {
+    width: 800px;
 }
 
 @media (max-width: 768px) {
@@ -124,6 +125,7 @@ justify-content:center;
     .site .events img, .site .about img {
         order: 2; /* Make the image appear after the text */
     }
+    
 }
 
 
@@ -349,5 +351,79 @@ justify-content:center;
     scroll-margin-top: 100px; /* Adjust this value based on your header's actual height */
 }
 
+
+
+@media (max-width: 750px) {
+    .site {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+        .main {
+            padding: 60px 10px; /* Adjust padding for smaller screens */
+        }
+    
+        .main h1 {
+            font-size: 3rem; /* Adjust the font size for smaller screens */
+        }
+    
+        .main h4 {
+            font-size: 1.5rem; /* Adjust the font size for subtitles on smaller screens */
+        }
+    .nav-links {
+        visibility: hidden;
+    }
+    .header-content, .nav-links, .main, .about, .events, .sponsors, .rules, .prizes, .faq, .contact-us {
+        padding: 0 15px; /* Add padding on smaller screens */
+    }
+
+    .main h1 {
+        font-size: 4rem; /* Smaller font size for main titles */
+    }
+
+    .main h4 {
+        font-size: 1.5rem; /* Smaller font size for subtitles */
+    }
+    .main img {
+        width: 90vw;
+    }
+
+
+    .nav-links li {
+        margin: 10px 0; /* Adjust spacing for vertical layout */
+    }
+
+    .site, .about, .events, .sponsors, .rules, .prizes, .faq {
+        padding: 0; /* Remove padding */
+    }
+
+    .site .events, .site .about {
+        flex-direction: column-reverse; /* Stack images over text */
+        align-items: center; /* Center align items */
+    }
+
+    .site .events img, .site .about img {
+        width: 100%; /* Full width images */
+    }
+
+    .about, .events, .sponsors, .rules, .prizes, .faq {
+        flex-direction: column; /* Stack children vertically */
+        text-align: center; /* Center text */
+    }
+
+    .sponsor-images img {
+        min-width: 80px; /* Smaller minimum width for logos */
+    }
+
+    .button-container, .sponsor-images {
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        justify-content: center; /* Center buttons/logos */
+    }
+
+    
+
+    .contact-us, .social-media-links a {
+        font-size: 20px; /* Adjust font size for readability */
+    }
+}
 
   
