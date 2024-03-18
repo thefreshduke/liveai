@@ -38,7 +38,7 @@ justify-content:center;
     
 }
 
-.button1, .button2 {
+.button1, .button2, .button3 {
     padding: 10px;
     border: 2px solid black;
     border-radius: 15px;
@@ -47,9 +47,10 @@ justify-content:center;
     transition: background-color 0.3s; /* Smooth transition for background color */
     text-decoration: none;
     color: black;
+    margin: 5px;
 }
 
-.button1:hover, .button2:hover {
+.button1:hover, .button2:hover, .button3:hover {
     background-color: #012169; /* Changes background to blue on hover */
     color: white; /* Optional: Changes text color on hover */
 }
@@ -364,16 +365,16 @@ justify-content:center;
 }
 
 .faq-question {
-    background-color: #f1f1f1;
-    border: none;
-    outline: none;
-    width: 100%;
-    text-align: left;
-    padding: 15px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-align: center;
+    display: flex; /* Establishes a flex container */
+    justify-content: space-between; /* Spaces out the child elements */
+    align-items: center; /* Vertically centers the child elements */
+    width: 100%; /* Adjust based on your design */
+    padding: 10px; /* Adjust based on your design */
+    border: none; /* Removes default button border */
+    background-color: #f1f1f1; /* Adjust based on your design */
+    text-align: left; /* Aligns text to the left */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font: 16px "Poppins";
 }
 
 .faq-question:hover {
