@@ -1,2 +1,2 @@
 # liveai
-LIVE AI Website (liveai.info)
+LIVE AI Website (liveaiglobal.com)
