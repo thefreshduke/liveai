@@ -207,20 +207,24 @@ justify-content:center;
 /* Use flex-direction to reverse the order for .events, if you want the image on the left */
 
 .rules, .prizes, .faq {
-    width: 90%; /* Cover the entire width of the screen */
+    width: 80%; /* Cover the entire width of the screen */
     margin: 0 auto; /* Center the div */
     padding: 40px 0; /* Add padding above and below */
     box-sizing: border-box; /* Include padding in the div's dimensions */
     font-family: "Poppins", "Poppins";    color: black;
     line-height: 30px;
-
-
 }
 
 
 .rules, .prizes, .faq {
     text-align: center; /* Center the text of the h1 within the .rules div */
 }
+
+.rules p, .prizes p {
+    line-height: 2.0;
+    text-align: left; /* 强制左对齐 */
+}
+
 
 .sponsors {
     display: flex;
@@ -358,10 +362,11 @@ justify-content:center;
 }
 .faq-answer {
     display: none;
-    padding: 15px;
+    padding: 20px;
     margin-top: 5px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
+    text-align: left;
 }
 
 .faq-question {
