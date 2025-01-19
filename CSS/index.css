@@ -503,9 +503,11 @@ justify-content:center;
 
 .format-images-container {
     display: flex;
-    justify-content: space-around;
-    width: 900px;
+    justify-content: center; /* Center the .format-images-container itself */
+    width: 100%;
+    background-color: white;
     margin: 0 auto; /* Center the .format-images-container itself */
+    gap: 20px;
 }
 
 .image-wrapper {
@@ -542,6 +544,12 @@ justify-content:center;
     margin-top: 10px; /* Optional: Add margin to separate text from image */
 }
 
+.topics-container img {
+    width: 100%; /* Make the image responsive */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain the aspect ratio */
+}
+
 .prizes {
     width: 60%;
     border: 5px #0E2080 solid;
@@ -549,3 +557,15 @@ justify-content:center;
     padding: 20px;
 }
 
+@media (max-width: 1700px) {
+    .theme-images-container,
+    .format-images-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .image-wrapper,
+    .image-wrapper-2 {
+        margin-bottom: 20px; /* Add space between images when stacked vertically */
+    }
+}
