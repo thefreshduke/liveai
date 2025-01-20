@@ -462,7 +462,8 @@ justify-content:center;
 .rules {
     text-align: center;
     margin: 0 auto; 
-    width: 60%;
+    width: 70%;
+    /* background-color: #007bff; */
 }
 
 .rules-modal {
@@ -498,7 +499,7 @@ justify-content:center;
 .theme-images-container {
     display: flex;
     justify-content: space-around;
-    width: 900px;
+    width: 100%;
 }
 
 .format-images-container {
@@ -557,7 +558,7 @@ justify-content:center;
     padding: 20px;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1400px) {
     .theme-images-container,
     .format-images-container {
         flex-direction: column; /* Stack items vertically */
